@@ -8,6 +8,8 @@ import requests
 
 from bs4 import BeautifulSoup
 
+
+# REST api call
 headers = {
     'authority': 'bridge.competitionsuite.com',
     'accept': '*/*',
@@ -29,12 +31,7 @@ params = {
     '_': '1662597435211',
 }
 
+#params from curl
 response = requests.get('https://bridge.competitionsuite.com/api/orgscores/GetCompetition/jsonp', params=params, headers=headers)
 
 print(response.text)
-res = json.loads(response.text)
-
-
-
-for name, score in res:
-    print(name)
