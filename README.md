@@ -1,1 +1,1 @@
-Code to scrape marching band score from UMEA
+Code to scrape marching band score from UMEA.
